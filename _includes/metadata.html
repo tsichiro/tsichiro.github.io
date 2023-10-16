@@ -138,6 +138,10 @@
         {%- capture link -%}https://www.quora.com/profile/{{ site.quora_username }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
+    {%- if site.zhihu_username -%}
+    {%- capture link -%}https://www.zhihu.com/people/{{ site.zhihu_username }}{%- endcapture -%}
+    {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
     {%- if site.blogger_url -%}
         {%- capture link -%}{{ site.blogger_url }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
